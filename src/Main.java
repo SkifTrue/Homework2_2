@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        int x = 100; // Изначально
-        int y = 1001; // Пополнение
+        int money1 = 100; // Изначальное колличество денег на счету
+        int refill = 1001; // Пополнение
 
-        int w = y / 100; // Расчет бонусов
-        int q = y > 1000 ? (w) : (0);
-        int z = x + y + q; // Общее
+        int bonus = refill / 100; // Бонусы
+        int bonus_calc = refill > 1000 ? (bonus) : (0); // Расчет бонусов
+        int full = money1 + refill + bonus_calc; // Общее колличество денег на счету
 
-        System.out.println("Общая сумма на счету " + z);
+        System.out.println("Общая сумма на счету " + full);
 
-        System.out.println("Пополнение на сумму " + y);
+        System.out.println("Пополнение на сумму " + refill);
 
-        System.out.println("Колличество бонусных рублей " + q);
+        System.out.println("Колличество бонусных рублей " + bonus_calc);
     }
 }
